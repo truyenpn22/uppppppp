@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+section {
+  margin: 30px 24px;
+}
+
+.popup-content {
+  max-width: 700px;
+}
+
+.modal {
+  font-size: 12px;
+}
+
+.modal>.header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal>.content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.modal>.actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal>.close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #cfcece;
+}
+
+/* #react-paginate ul {
+  display: inline-block;
+  margin-left: 20px;
+  padding-left: 0;
+} */
+
+#react-paginate li {
+  display: inline-block;
+  /* border: 1px solid rgb(224, 224, 224); */
+  color: #918b8b;
+  cursor: pointer;
+  margin-right: 3px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#react-paginate li a {
+  padding: 5px 10px;
+  display: inline-block;
+  color: #000000;
+  outline: none;
+}
+
+#react-paginate li.active {
+  background: rgb(41, 162, 233);
+  color: rgb(8, 23, 112);
+  outline: none;
+}
